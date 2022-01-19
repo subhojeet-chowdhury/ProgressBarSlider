@@ -38,7 +38,13 @@ button {
 .bar {
   position: absolute;
   height: 100%;
-  width: 50%;
+  width: 0%;
+  background: #4780e9;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
 }
 .counter {
   height: 40px;
@@ -69,4 +75,15 @@ button {
   color: #fff;
   font-size: 1.2rem;
   margin-right: 1rem;
+}
+
+.disable {
+  user-select: none;
+  pointer-events: none;
+  filter: brightness(1.5);
+  -webkit-filter: brightness(1.5);
+}
+
+.active {
+  border-color: #4780e9;
 }
